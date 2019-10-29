@@ -1,0 +1,119 @@
+/*general css things*/
+#content {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+#search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+h1{
+    display:inline-block;
+    color: #000000;
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    text-align:center;
+    margin-left:0;
+    margin-right:600px;
+   }
+
+.header p {
+    margin-top: 66px;
+    font-weight: 999;
+    font-size: 20px;
+}
+
+.header img {
+    position: absolute;
+    left:10px;
+    top: 15;
+    width: 140px;
+    height: 140px;
+    background: #ffffff00;
+}
+
+
+/* all about flip card from here */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    padding: 5px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back{
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+
+/* other css stuff*/
+.bookDescription {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 15px;
+    color: white;
+}
+
+.textttl {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+input {
+    width: 15em;
+    height: 2em;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.button {
+    width: 10em;
+    height: 2em;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 0, 165);
+}
